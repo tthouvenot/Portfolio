@@ -3,48 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1751d2ab0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/style.css">
     <title>Portfolio - Index</title>
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="./index.html">Accueil</a></li>
-            <li><a href="./achievement.html">Mes réalisations</a></li>
-            <li><a href="./career.html">Mon parcours</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
+    <header id="header">
+        <h1 class="header-title">Tristan THOUVENOT</h1>
+        <nav class="header-menu" aria-label="main-menu">
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./achievement.html">Mes réalisations</a></li>
+                <li><a href="./career.html">Mon parcours</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h1>Tristan THOUVENOT</h1>
-            <p>Développeur web Freelance</p>
+        <section id="presentation">
+        <div class="presentation-content">
+            <h2 class="presentation-title">Tristan THOUVENOT</h2>
+            <p class="presentation-job">Développeur web Freelance</p>
+            <p class="presentation-tagline">La seule chose que je sais, c'est que je ne sais rien!</p>
+        </div>
+            <div class="presentation-photo">
+                <img src="./assets/img/peter_griffin.jpg" alt="portrait de Peter Griffin">
+            </div>
         </section>
-        <section>
-            <article>
-                <h2>À propos</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim velit laboriosam ipsum doloremque, dolores doloribus tempore quaerat iusto delectus unde, porro blanditiis nemo!
-                </p>
+        <section id="about">
+            <article class="about-container">
+                <div class="about-photo">
+                    <img src="./assets/img/about_me.jpg" alt="représente une capture d'écran avec des lignes de codes">
+                </div>
+                <div class="about-content">
+                    <h2 class="about-title">À propos</h2>
+                    <p class="about-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim velit laboriosam ipsum doloremque, dolores doloribus tempore quaerat iusto delectus unde, porro blanditiis nemo!
+                    </p>
+                    <p class="about-paragraph">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nobis fuga dolor, id aliquid dolore aut, corrupti sed blanditiis nostrum voluptate delectus tenetur quos inventore voluptatem nulla harum facere nesciunt.
+                    </p>
+                    <p class="about-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim velit laboriosam ipsum doloremque, dolores doloribus tempore quaerat iusto delectus unde, porro blanditiis nemo!
+                    </p>
+                    <p class="about-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim velit laboriosam ipsum doloremque, dolores doloribus tempore quaerat iusto delectus unde, porro blanditiis nemo!
+                    </p>
+                    <p class="about-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim velit laboriosam ipsum doloremque, dolores doloribus tempore quaerat iusto delectus unde, porro blanditiis nemo!
+                    </p>
+                    <p class="about-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim velit laboriosam ipsum doloremque, dolores doloribus tempore quaerat iusto delectus unde, porro blanditiis nemo!
+                    </p>
+                    <p class="about-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim velit laboriosam ipsum doloremque, dolores doloribus tempore quaerat iusto delectus unde, porro blanditiis nemo!
+                    </p>
+                </div>
             </article>
         </section>
-        <section>
-            <article>
-                <h2>Objectif de ce portfolio</h2>
-                <p>
+        <section id="objective">
+            <article class="objective-container">
+                <h2 class="obective-title">Objectif de ce portfolio</h2>
+                <p class="objective-content">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente aliquam autem provident officia molestias nihil reprehenderit veniam at sint eum non dolorem hic, voluptate explicabo, facilis tenetur odio iure suscipit inventore accusamus beatae repellat similique. Sequi porro aliquam laudantium dolorem, illum aspernatur cupiditate architecto, eum eligendi ipsum recusandae distinctio?
                 </p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi consequatur sit blanditiis at.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, libero porro ducimus dolorem sed animi ipsa vitae saepe assumenda minima, quidem, sunt sequi deserunt.</p>
+                <p class="objective-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi consequatur sit blanditiis at.</p>
+                <p class="objective-content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, libero porro ducimus dolorem sed animi ipsa vitae saepe assumenda minima, quidem, sunt sequi deserunt.</p>
             </article>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li><a href="./index.html">Accueil</a></li>
-            <li><a href="./achievement.html">Mes réalisations</a></li>
-            <li><a href="./career.html">Mon parcours</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
+    <footer id="footer">
+        <nav class="footer-menu" aria-label="contact-menu">
+            <a href="./contact.html">Contact</a>
+            <ul class="social-media">
+                <li></li>
+                <li><a href="https://www.linkedin.com/in/tthouvenot/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/thouvenot.tristan/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
