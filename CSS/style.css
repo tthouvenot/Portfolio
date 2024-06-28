@@ -4,13 +4,7 @@
     box-sizing: border-box;
 }
 
-html{
-    height: 100%;
-}
-
 body{
-    min-height: 100%;
-    position: relative;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     color: #0E0F19;
@@ -32,16 +26,20 @@ a{
     padding: 0 0.625em;
     margin-bottom: 3.125em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .header-title{
-    width: 45%;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-menu {
-    width: 55%;
+    width: 50%;
     height: 100%;
 }
 
@@ -49,8 +47,9 @@ a{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 2.5em;
 }
 
 .header-menu li{
@@ -60,6 +59,28 @@ a{
 .header-menu li:hover {
     transform: scale(1.2);
     border-bottom: #0E0F19 0.0625em solid;
+}
+
+.header-social{
+    width: 25%;
+    height: 100%;
+}
+
+.header-social ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8em;
+}
+
+.header-social li{
+    transition: all 0.2s ease-in-out;
+}
+
+.header-social li:hover {
+    transform: scale(1.2);
 }
 
 #presentation{
@@ -111,12 +132,12 @@ h2{
 }
 
 .about-container{
-    height: fit-content;
+    height: 25em;
+    padding: 0 3em;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 1.25rem;
-    border: green 1px solid;
 }
 
 .about-paragraph{
@@ -125,27 +146,65 @@ h2{
 
 .about-photo{
     height: 100%;
-    width: 50%;
-    border: blue 1px solid;
+    width: 40%;
 }
 
 .about-photo img{
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .about-content{
     width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5em;
+    line-height: 1.4;
 }
 
 #objective{
     margin-bottom: 3.125em;
 }
 
+.objective-container{
+    height: 25em;
+    padding: 0 3em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.objective-paragraph{
+    text-align: justify;
+}
+
+.objective-photo{
+    height: 100%;
+    width: 40%;
+}
+
+.objective-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.objective-content{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    line-height: 1.4;
+}
+
 #footer{
     height: 9em;
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
