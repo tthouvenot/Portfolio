@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://kit.fontawesome.com/a1751d2ab0.js" crossorigin="anonymous"></script>
     <title>Portfolio - Contact</title>
 </head>
 <body>
@@ -17,29 +18,60 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+        <nav class="header-social" aria-label="main-social">
+            <ul class="social-media">
+                <li></li>
+                <li><a href="https://www.linkedin.com/in/tthouvenot/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/thouvenot.tristan/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <form action="">
-                <label for="firstname">Prénom</label>
-                <input type="text" name="firstname" id="firstname">
-                <label for="lastname">Nom</label>
-                <input type="text" name="lastname" id="lastname">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="message">Votre message</label>
-                <textarea name="message" id="message"></textarea>
-                <input type="submit" value="Envoyer">
-            </form>
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-cta">
+                    <div class="contact-img-fadeaway">
+                        <div class="conctact-bck-fade"></div>
+                        <div class="contact-bck">
+                            <img src="./assets/img/contact_mail.jpg" alt="représente une main tenant une enveloppe">
+                        </div>
+                    </div>
+                    <div class="contact-tagline">
+                        <p>N'hésitez pas à nous envoyer un message</p>
+                    </div>
+                </div>
+                <form action="" class="contact-form">
+                    <h2 class="contact-title">Formulaire de contact:</h2>
+                    <div class="contact-firstname">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div class="contact-lastname">
+                        <label for="lastname">Nom</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div class="contact-email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="contact-message">
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <input id="button" type="submit" value="Envoyer">
+                </form>
+            </div>
         </section>
     </main>
     <footer id="footer">
         <nav class="footer-menu" aria-label="contact-menu">
-            <ul>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./index.html">LinkedIn</a></li>
-                <li><a href="./achievement.html">Instagram</a></li>
-                <li><a href="./career.html">X</a></li>
+            <a href="./contact.html">Contact</a>
+            <ul class="social-media">
+                <li></li>
+                <li><a href="https://www.linkedin.com/in/tthouvenot/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/thouvenot.tristan/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
             </ul>
         </nav>
     </footer>

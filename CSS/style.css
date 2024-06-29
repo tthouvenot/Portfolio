@@ -21,7 +21,7 @@ a{
 }
 
 #header{
-    height: 100px;
+    height: 6.25em;
     width: 100%;
     padding: 0 0.625em;
     margin-bottom: 3.125em;
@@ -81,7 +81,7 @@ a{
 }
 
 .header-social li:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 #presentation{
@@ -233,4 +233,121 @@ h2{
 
 .social-media a{
     font-size: 2em;
+}
+
+#contact{
+    width: 70%;
+    height: calc(100vh - 18.375em); 
+    margin: auto;
+}
+
+.contact-container{
+    height: 31.25em;
+    Width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-cta{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-tagline{
+    padding: 1em;
+    position: relative;
+    top: -9em;
+    z-index: 3;
+}
+
+.contact-tagline p{
+    font-size: 2em;
+}
+
+.contact-img-fadeaway{
+    margin:0px 0px;
+    padding:0px 0px;
+    width: 100%;
+    display:block;
+    height: auto;
+    position:relative;
+}
+
+.contact-img-fadeaway .conctact-bck-fade{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(255,255,255,1));
+    background: -o-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    background: -moz-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    width:100%;
+    height:100%;
+    z-index:2;    
+}
+.contact-img-fadeaway .contact-bck{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    overflow: hidden;
+    display: inline-block;
+
+}
+.contact-img-fadeaway .contact-bck img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+
+}
+
+.contact-form{
+    width: 100%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-title{
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.contact-form div{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+#button{
+    width: 75%;
+    height: fit-content;
+    padding: 0.6em;
+    border: none;
+    font-size: 1.25em;
+    background-color: #577590;
+    color: #E2FCEF;
+}
+
+#button:hover{
+    background-color: #E2FCEF;
+    color: #577590;
+    border: #577590 1px solid;
+    transition: all 100ms ease-in-out;
+}
+
+.contact-form input{
+    height: 1.75em;
+    border-radius: 0.3em;
+    border: #0E0F19 .0625em solid;
+}
+
+.contact-form textarea{
+    height: 6.25em;
+    border-radius: 0.5em;
 }
