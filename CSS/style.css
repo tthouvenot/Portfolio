@@ -1,3 +1,5 @@
+/* --- Reset CSS --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +21,8 @@ a{
     color: #0E0F19;
     text-decoration: none;
 }
+
+/* --- Page index + header et footer --- */
 
 #header{
     height: 6.25em;
@@ -235,6 +239,8 @@ h2{
     font-size: 2em;
 }
 
+/* --- Page Contact --- */
+
 #contact{
     width: 70%;
     height: calc(100vh - 18.375em); 
@@ -351,3 +357,46 @@ h2{
     height: 6.25em;
     border-radius: 0.5em;
 }
+
+/* --- Page achievement --- */
+
+#achievement{
+    width: 70%;
+    height: 200vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine; 
+}
+
+.achievement-title{
+    padding: 0.5em 0 0.5em 0.5rem;
+}
+
+.achievement-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 5%;
+    border: red 1px solid;
+}
+
+.achievement-container > * {
+    width: 30%;
+    height: 30%;
+    padding: 0.8em;
+    border: brown 1px solid;
+}
+
+.achievement-container > * img{
+    width: 100%;
+    height: 30%;
+    object-fit: contain;
+}
+
+
+
+/* --- Page career ---  */
+
