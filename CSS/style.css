@@ -362,11 +362,10 @@ h2{
 
 #achievement{
     width: 70%;
-    height: 200vh;
     margin: auto;
+    margin-bottom: 5em;
     display: flex;
     flex-direction: column;
-    background-color: aquamarine; 
 }
 
 .achievement-title{
@@ -375,25 +374,145 @@ h2{
 
 .achievement-container{
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    gap: 5%;
-    border: red 1px solid;
+    gap: 2em;
 }
 
 .achievement-container > * {
     width: 30%;
-    height: 30%;
+    height: 35em;
     padding: 0.8em;
-    border: brown 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    background-color: #E4E3D3;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .achievement-container > * img{
     width: 100%;
     height: 30%;
     object-fit: contain;
+}
+
+.achievement-paragraph{
+    height: 10em;
+    text-align: justify;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.achievement-container > * a{
+    text-align: center;
+    height: fit-content;
+    padding: 0.6em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+    background-color: #577590;
+    color: #E2FCEF;
+}
+
+.achievement-container > * a:hover{
+    background-color: #E2FCEF;
+    color: #577590;
+    border: #577590 1px solid;
+    transition: all 100ms ease-in-out;
+}
+
+.achievement-tag{
+    height: 6em;
+    color: #E2FCEF;
+}
+
+.achievement-tag ul{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5em;
+}
+
+.achievement-tag li {
+    padding: 0.5em 0.7em;
+}
+
+.achievement-container h3{
+    height: 2.6em;
+}
+
+.itil{
+    background-color: #9D77A0;
+    border-radius: 0.3em;
+}
+
+.organisation{
+    background-color: #CDA2AB;
+    border-radius: 0.3em;
+}
+
+.glpi{
+    background-color: #00A6FA;
+    border-radius: 0.3em;
+}
+
+.development{
+    background-color: #cfa05e;
+    border-radius: 0.3em;
+}
+
+.system-administration{
+    background-color: #BDC667;
+    border-radius: 0.3em;
+}
+
+.security{
+    background-color: #FE5F55;
+    border-radius: 0.3em;
+}
+
+.wordpress{
+    background-color: #21759B;
+    border-radius: 0.3em;
+}
+
+.nagios {
+    background-color: #BEC0C2;
+    border-radius: 0.3em;
+}
+
+.pfsense {
+    background-color: #9C0908;
+    border-radius: 0.3em;
+}
+
+.network-administration {
+    background-color: #77966D;
+    border-radius: 0.3em;
+}
+
+.html {
+    background-color: #F16A30;
+    border-radius: 0.3em;
+}
+
+.css {
+    background-color: #4DA2D5;
+    border-radius: 0.3em;
+}
+
+.javascript {
+    background-color: #f3db22;
+    border-radius: 0.3em;
+    color:#0E0F19;
+}
+
+.regex {
+    background-color: #0D5C63;
+    border-radius: 0.3em;
 }
 
 
