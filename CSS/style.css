@@ -349,11 +349,15 @@ h2{
 
 .contact-form input{
     height: 1.75em;
+    padding: 0.5em;
     border-radius: 0.3em;
     border: #0E0F19 .0625em solid;
+    caret-color: auto;
 }
 
 .contact-form textarea{
+    caret-color: auto;
+    padding: 0.5em;
     height: 6.25em;
     border-radius: 0.5em;
 }
