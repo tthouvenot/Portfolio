@@ -515,7 +515,63 @@ h2{
     border-radius: 0.3em;
 }
 
-
-
 /* --- Page career ---  */
 
+#career{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#resume{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.resume-container{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5em;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+#cv{
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    gap: 1.5em;
+}
+
+#cv a{
+    text-align: center;
+    height: fit-content;
+    padding: 0.6em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+    background-color: #577590;
+    color: #E2FCEF;
+}
+
+#cv a:hover{
+    background-color: #E2FCEF;
+    color: #577590;
+    border: #577590 1px solid;
+    transition: all 100ms ease-in-out;
+}
+
+.cv-img{
+    padding: 2em;
+    border-radius: 0.5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4E3D3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
