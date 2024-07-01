@@ -24,7 +24,7 @@ a{
 
 /* --- Page index + header et footer --- */
 
-#header{
+.header-wrap{
     height: 6.25em;
     width: 100%;
     padding: 0 0.625em;
@@ -578,4 +578,198 @@ h2{
     align-items: center;
     background-color: #E4E3D3;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* --- Responsive  --- */
+
+@media screen and (max-width: 575.98px){
+
+    /* --- Page index + header et footer --- */
+
+    .header-wrap{
+        max-width: 575px;
+        flex-wrap: wrap;
+    }
+
+    .header-menu ul{
+        flex-wrap: wrap;
+    }
+
+    .header-menu li:active {
+        transform: scale(1.2);
+        border-bottom: #0E0F19 0.0625em solid;
+    }
+
+    .header-social{
+        display: none;
+    }
+
+    .presentation-photo{
+        display: none;
+    }
+
+    /* --- Page career ---  */
+
+    .cv-img img{
+        width: 100%;
+    }
+
+    /* --- Page Contact --- */
+
+    .contact-cta{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* TODO Travailler le responsive mobile*/
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* --- Page index + header et footer --- */
+
+    .header-wrap{
+        max-width: 767px;
+        margin: auto;
+        margin-bottom: 3.125em;
+        flex-wrap: wrap;
+        height: fit-content;
+        padding-top: 1em;
+    }
+
+    .header-title{
+        width: auto;
+    }
+
+    .header-menu {
+        width: auto;
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 1em;
+    }
+
+    .header-menu li:active {
+        transform: scale(1.2);
+        border-bottom: #0E0F19 0.0625em solid;
+    }
+
+    .header-social{
+        width: auto;
+        margin-top: 1em;
+    }
+
+    .header-social li:active {
+        transform: scale(1.4);
+    }
+
+    #main-container { 
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .about-container{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .about-photo{
+        width: 100%;
+    }
+
+    .about-content{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .objective-container{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+
+    .objective-photo{
+        width: 100%;
+    }
+
+    .objective-photo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .objective-content{
+        width: 100%;
+        text-align: justify;
+    }
+
+    /* --- Page Contact --- */
+
+    #contact{
+        width: 100%;
+        height: calc(100vh - 18.375em); 
+    }
+
+    .contact-container{
+        Width: 100%;
+        margin: 0 1.2em;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* TODO Travailler la taille de l'image CTA  */
+
+    /* --- Page achievement --- */
+
+    #achievement{
+        width: 100%;
+    }
+
+    .achievement-container > * {
+        width: 40%;
+    }
+
+    .achievement-container > * a:active{
+        background-color: #E2FCEF;
+        color: #577590;
+        border: #577590 1px solid;
+        transition: all 100ms ease-in-out;
+    }
+
+    /* TODO Bosser le responsive des cartes*/
+
+    /* --- Page career ---  */
+
+    #career{
+        width: 100%;
+    }
+    
+    #resume{
+        margin: 0 2.5em;
+    }    
+
+    #cv{
+        width: 90%;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+
+    #cv a:active{
+        background-color: #E2FCEF;
+        color: #577590;
+        border: #577590 1px solid;
+        transition: all 100ms ease-in-out;
+    }
+
+    
+}
+
+@media screen and (min-width: 1921px){
+    
+    /* TODO travailler le responsive Wide Screen */
+
 }
