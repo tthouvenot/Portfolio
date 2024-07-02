@@ -582,51 +582,6 @@ h2{
 
 /* --- Responsive  --- */
 
-@media screen and (max-width: 575.98px){
-
-    /* --- Page index + header et footer --- */
-
-    .header-wrap{
-        max-width: 575px;
-        flex-wrap: wrap;
-    }
-
-    .header-menu ul{
-        flex-wrap: wrap;
-    }
-
-    .header-menu li:active {
-        transform: scale(1.2);
-        border-bottom: #0E0F19 0.0625em solid;
-    }
-
-    .header-social{
-        display: none;
-    }
-
-    .presentation-photo{
-        display: none;
-    }
-
-    /* --- Page career ---  */
-
-    .cv-img img{
-        width: 100%;
-    }
-
-    /* --- Page Contact --- */
-
-    .contact-cta{
-        display:none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    /* TODO Travailler le responsive mobile*/
-
-}
-
 @media screen and (max-width: 1200px) {
 
     /* --- Page index + header et footer --- */
@@ -720,7 +675,13 @@ h2{
         justify-content: flex-start;
     }
 
-    /* TODO Travailler la taille de l'image CTA  */
+    .contact-img-fadeaway{
+        width: 80%;
+    }
+
+    .contact-tagline{
+        width: 80%;
+    }
 
     /* --- Page achievement --- */
 
@@ -730,6 +691,8 @@ h2{
 
     .achievement-container > * {
         width: 40%;
+        height: 45em;
+        gap: 2em;
     }
 
     .achievement-container > * a:active{
@@ -738,8 +701,6 @@ h2{
         border: #577590 1px solid;
         transition: all 100ms ease-in-out;
     }
-
-    /* TODO Bosser le responsive des cartes*/
 
     /* --- Page career ---  */
 
@@ -765,11 +726,70 @@ h2{
         transition: all 100ms ease-in-out;
     }
 
-    
 }
 
-@media screen and (min-width: 1921px){
-    
-    /* TODO travailler le responsive Wide Screen */
+@media screen and (max-width: 768px) {
 
+    /* TODO Travailler le responsive mobile*/
+
+    /* --- Page index + header et footer --- */
+
+    #presentation{
+        gap: 0;
+    }
+    
+    
+    /* --- Page achievement --- */
+
+    .achievement-container > * {
+        width: 40%;
+        height: 60em;
+        gap: 3.5em;
+    }
+
+     /* --- Page career ---  */
+
+     .cv-img img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 575.98px){
+
+    /* --- Page index + header et footer --- */
+
+    .header-wrap{
+        max-width: 575px;
+        flex-wrap: wrap;
+    }
+
+    .header-menu ul{
+        flex-wrap: wrap;
+    }
+
+    .header-menu li:active {
+        transform: scale(1.2);
+        border-bottom: #0E0F19 0.0625em solid;
+    }
+
+    .header-social{
+        display: none;
+    }
+
+    .presentation-photo{
+        display: none;
+    }
+
+    /* --- Page career ---  */
+
+    .cv-img img{
+        width: 100%;
+    }
+
+    /* --- Page Contact --- */
+
+    .contact-cta{
+        display:none;
+    }
 }
